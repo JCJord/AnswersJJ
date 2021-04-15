@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ('./partials/header.ejs') %>
+    <body>
+        <%- include ('./partials/navbar.ejs') %>
+
+        <div class="container d-flex">
+            <div class="ask">
+                <h3>Realizar Pergunta</h3>
+
+                <form method="POST" action="/add">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label"
+                            >Título</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="Título"
+                            name="title"
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <label
+                            for="exampleFormControlTextarea1"
+                            class="form-label"
+                            >Descrição</label
+                        >
+                        <textarea
+                            name="description"
+                            class="form-control"
+                            id="exampleFormControlTextarea1"
+                            placeholder="Descrição da pergunta"
+                            rows="4"
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default bg-dark">
+                        Perguntar
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <%- include ('./partials/footer.ejs') %>
+    </body>
+</html>

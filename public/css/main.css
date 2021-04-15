@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #eceff1;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1300px;
+}
+
+.hamburger {
+  cursor: pointer;
+  padding: 15px 35px 16px 0px;
+  display: none;
+}
+
+.hamburger span,
+.hamburger span:before,
+.hamburger span:after {
+  cursor: pointer;
+  height: 2px;
+  width: 25px;
+  background: #ffffff;
+  position: absolute;
+  display: inline-block;
+  content: "";
+}
+
+.hamburger span:before {
+  top: -8px;
+}
+
+.hamburger span:after {
+  bottom: -8px;
+}
+
+/*
+#hamburger span, #hamburger span:before, #hamburger span:after {
+  transition: all 200ms ease-in-out;
+}
+*/
+.hamburger span,
+.hamburger span:before,
+.hamburger span:after {
+  -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* easeInOutCubic */
+}
+
+.hamburger.active span {
+  background-color: transparent;
+}
+
+.hamburger.active span:before,
+.hamburger.active span:after {
+  top: 0;
+}
+
+.hamburger.active span:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.hamburger.active span:after {
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+          transform: translateY(-10px) rotate(-45deg);
+  top: 10px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+}
+
+.btn:hover {
+  color: #fff !important;
+}
+
+.card {
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 25px;
+}
+
+.nav-link:hover {
+  color: #8f8f8f !important;
+}
+
+.q-title {
+  margin: 25px auto;
+  max-width: 800px;
+}
+
+.btn-ans {
+  margin-top: 15px;
+  width: 180px;
+  padding: 8px;
+  background-color: white !important;
+  border: 1px solid #c7c7c7;
+  color: black;
+  text-align: center;
+}
+
+.btn-ans:hover {
+  background-color: #747474 !important;
+}
+
+.fa-chart-bar {
+  right: 20px;
+  position: relative;
+}
+
+.ans-title {
+  margin-bottom: 30px;
+}
+
+.ans-answers h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 800px;
+  margin-top: 0;
+}
+
+.answer {
+  border: none;
+  padding: 0;
+  background-color: #eceff1;
+}
+
+.ico {
+  font-size: 25px;
+}
+
+.nav-item {
+  padding: 10px !important;
+}
+
+.nav-link {
+  margin: 0 auto !important;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.nav-link:hover {
+  background-color: #bebebe;
+  color: #2c2d2e !important;
+}
+
+.nav-icons {
+  width: 975px;
+}
+
+@media screen and (max-width: 258px) {
+  .fa-chart-bar {
+    right: 0px;
+    position: relative;
+  }
+  .btn-ans {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .nav-icons {
+    display: none;
+  }
+  .ask {
+    width: 100%;
+  }
+  .hamburger {
+    z-index: 2;
+    display: inline;
+  }
+  .nav-set {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1154px) {
+  .nav-icons {
+    width: 250px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
