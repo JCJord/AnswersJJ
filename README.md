@@ -1,6 +1,7 @@
-# Website Perguntas e Respostas![jjAnswers]
+# Website Perguntas e Respostas!
 <br>
-(https://user-images.githubusercontent.com/69487022/123868825-99e6c100-d906-11eb-98c1-7dd19e541224.png)
+![jjAnswers](https://user-images.githubusercontent.com/69487022/123868921-b71b8f80-d906-11eb-9a2d-1e8513677805.png)
+
 
 Website de perguntas e respostas, possui um formulário para postar uma pergunta e uma pagina dinâmica que apresenta o conteúdo da pergunta e um formulário de resposta.
 
