@@ -11,6 +11,7 @@ Website de perguntas e respostas, possui um formulário para postar uma pergunta
 <li>Handlebars.JS</li>
 <li>Bootstrap</li>
 <li>Sass</li>
+<li>EJS</li>
 
 ### URL
 https://jjanswers.herokuapp.com/
