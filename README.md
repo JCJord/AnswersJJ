@@ -1,4 +1,4 @@
-# Website Perguntas e Respostas!
+# Website Perguntas e Respostas
   ![jjAnswers](https://user-images.githubusercontent.com/69487022/123868955-c4387e80-d906-11eb-8a2d-1947d394afd6.png)
 
 
